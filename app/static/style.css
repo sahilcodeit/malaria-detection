@@ -104,19 +104,15 @@ button.analyze-button {
     background-color: #7052CB;
     font-size: 13px;
     color: #ffffff; */
- color: white;
- background:  #383838;
- border: 1px solid #C0C0C0;;
- font-size: 17px;
- padding: 7px 12px;
- font-weight: normal;
- margin: 6px 0;
- margin-right: 10px;
- display: inline-block;
- text-decoration: none;
- font-family: 'Open Sans', sans-serif;
- min-width: 120px;
- margin-left: 39%;
+ .example_e:hover {
+color: #404040 !important;
+font-weight: 700 !important;
+letter-spacing: 3px;
+background: none;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.3s ease 0s;
+}
 }
 
 button:focus {
