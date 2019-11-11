@@ -1,1 +1,84 @@
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel='stylesheet' href='../static/style.css'>
+  <script src='../static/client.js'></script>
+</head>
+
+<body>
+      <div class="layer">
+          <div class="column">
+              <div class="container col-sm-4">
+                  <div class="card border-2 shadow my-5">
+                    <div class="card-body p-5">
+                        <p class='mid-text' style="font-family: Verdana, Geneva, Tahoma, sans-serif; color:black; border: 2">
+                            <br>
+                            <br><br>
+                            <br>
+                            Malaria is a deadly, infectious mosquito-borne disease caused by Plasmodium parasites. <br>
+                            <br>
+                            These parasites are transmitted by the bites of infected female Anopheles mosquitoes.
+                            <br>
+                            <br> Our model classifies the mosquito bite
+                            into the following categories: <br>
+                            <strong>PARASITIZED</strong> or <strong>UNINFECTED</strong><br>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="column">
+              <div class=" container col-sm-8">
+                  <div class='no-display'>
+                      <input id='file-input' class='no-display' type='file' name='file' accept='image/*' onchange='showPicked(this)'>
+                    </div>
+                      
+                    <div class='upload-label'>
+                        <button class='image_button' type='button' onclick='showPicker()'><span>Input Image</span></button> <br>
+                      <label id='upload-label'>| No file chosen |</label>
+                    </div>
+                    <div>
+                      <img id='image-picked' 
+                      style="position: relative; border-radius: 20px; border: 1px solid snow; padding: 1px; margin-left: 38%; ">
+                    </div>
+                    <div class='analyze'>
+                      <button id='analyze-button' class='image_button_2' type='button' onclick='analyze()'>Predict</button>
+                    </div>
+                    <div class='result-label'>
+                      <label id='result-label'></label>
+                    </div>
+              </div>
+            </div>
+            <div class="row footer">
+                <div class=" container col-sm-12">
+                <footer>
+                  <h4 style="margin-left: 20px; line-height: 0.5;">
+                    <hr>
+                   <b>Developers team</b> 
+                  </h4>
+                    <p style="margin-left: 30px; "><b>•Mayank Sajwan </b> <span><a class="fa fa-github"></a></span>
+                    <b>&nbsp •Sahil Jangra </b> <span><a href="https://github.com/CO16348Sahil" class="fa fa-github"></a></span>
+                    <b>&nbsp •Sukhleen Kaur </b> <span><a class="fa fa-github"></a></span></p>
+                    <hr style="margin-left: 20px;">
+                  </footer> 
+                </div>
+            </div>
+  </div>
+  <a href="#" class="float" id="menu-share">
+      <i class="fa fa-share my-float"></i>
+      </a>
+      <ul>
+      <li><a href="https://github.com/CO16348Sahil/automatic-watermark-detection/blob/master/MalariaaRecognition.ipynb">
+      <i class="fa fa-github my-float"></i>
+      </a></li>
+      </ul>
+      
+</body>
+</html>  
 
